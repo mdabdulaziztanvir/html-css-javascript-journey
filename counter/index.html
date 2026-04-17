@@ -22,16 +22,31 @@
       sizes="16*16"
       href="./files/images/favicon_io/favicon-16x16.png"
     />
-    <link rel="icon" type="image/x-icon" href=".ico" />
+    <!-- <link rel="icon" type="image/x-icon" href=".ico" /> -->
     <link rel="manifest" href="./files/images/favicon_io/site.webmanifest" />
     <!-- icons end -->
 
     <!-- main css -->
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- counter css -->
   </head>
   <body>
-    <h4>This is counter page</h4>
+    <h4 style="font-size: 2rem">This is counter page</h4>
+    <!-- counter start -->
+    <p id="counter-0">0</p>
+    <button class="counter-button decreaseCount" onclick="decreaseCount()">
+      -
+    </button>
+    <button class="counter-button" onclick="increaseCount()">+</button>
+    <button class="counter-button" onclick="resetCount()">Reset</button>
+    <button class="counter-button" onclick="saveCount()">Save</button>
+    <button class="counter-button" onclick="loadCount()">
+      Previous saved count
+    </button>
+
+    <!-- counter end -->
+
     <script src="./main.js"></script>
   </body>
 </html>

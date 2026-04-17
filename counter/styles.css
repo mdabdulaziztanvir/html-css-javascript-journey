@@ -1,0 +1,11 @@
+#counter-0 {
+  font-size: 2rem;
+}
+.counter-button {
+  font-size: 1rem;
+  padding: 8px;
+  cursor: pointer;
+}
+.decreaseCount {
+  padding-inline: 10px;
+}
