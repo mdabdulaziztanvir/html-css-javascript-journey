@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./todo_style.css" />
+    <title>test tool one</title>
+  </head>
+  <body>
+    <div class="container main-grid">
+      <div class="left-grid">
+        <h2>কি কি করতে চাও?</h2>
+        <form id="myForm">
+          <label for="title">টাইটেল লেখ</label>
+          <br />
+          <input type="text" id="title" name="title" /> <br />
+          <label for="details">পূর্ণতা দাও</label> <br />
+
+          <textarea type="text" id="details" name="details"></textarea> <br />
+
+          <button type="submit">সাবমিট কর</button>
+        </form>
+      </div>
+      <div class="right-grid list-todos">
+        <div class="refresh-data" id="refresh-data">refresh</div>
+        <hr />
+        <h3 id="total-todos-count">Total :</h3>
+        <ul id="todo-list-data"></ul>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
