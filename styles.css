@@ -3,6 +3,16 @@
   margin: 0;
 }
 body {
-  width: 670px;
+  max-width: 1290px;
   margin: 0 auto;
+}
+.normal-button {
+  padding-inline: 0.5rem;
+  padding-block: 0.3rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:-webkit-any-link {
+  overflow: hidden;
+  text-decoration: none;
 }

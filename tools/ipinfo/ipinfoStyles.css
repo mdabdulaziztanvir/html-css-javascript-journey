@@ -1,0 +1,21 @@
+#ip-flash-button,
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 1rem;
+}
+.grid-container > div {
+  border: 1px solid;
+  padding: 0.5rem;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.ip-details {
+  margin-top: 0.3rem;
+}
+.font-bold {
+  font-weight: bold;
+}
+#manual-ip-output {
+  white-space: pre-line;
+}

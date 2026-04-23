@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./ipinfoStyles.css" />
+    <title>IP Info :: IO</title>
+  </head>
+  <body>
+    <div class="flex" style="display: flex; gap: 1rem">
+      <h1>
+        This is
+        <i
+          ><b> <u>IP Information</u> </b></i
+        >page
+      </h1>
+      <a href="../">
+        <button class="normal-button">back</button>
+      </a>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-clild-one">
+        <div class="manual-ip-tables">
+          <label for="manual-ip-input">Enter a valid IP for details</label>
+          <input type="text" name="manual-ip" id="manual-ip-input" />
+          <button type="submit" class="normal-button manual-ip-submit">
+            Submit
+          </button>
+          <br />
+          <p id="manual-ip-output"></p>
+        </div>
+      </div>
+      <div class="grid-clild-two">
+        <div>
+          <button id="ip-flash-button">click to see your ip details</button>
+          <div class="ip-details">
+            <h4 id="ipinfo_ip"></h4>
+            <ul id="other-ip-details-ul"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- <p>your ip address is <span id="me-ip"></span></p> -->
+    </div>
+    <script type="module" src="./ipinfoMain.js"></script>
+  </body>
+</html>
