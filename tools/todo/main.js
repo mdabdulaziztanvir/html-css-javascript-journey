@@ -21,14 +21,18 @@ form.addEventListener("submit", async (e) => {
   if (res.ok) {
     form.reset();
   }
-  const data = await res.text();
-  alert(data);
+  const data = await res.json();
+  alert(data.message);
+  getAllTodo();
   // console.log(data);
 });
 
 getRefreshedData.addEventListener("click", async (e) => {
   e.preventDefault();
 
+  getAllTodo();
+});
+async function getAllTodo() {
   try {
     const res = await fetch(`${vanilaApi}/get-all-todo`, {});
     if (!res.ok) {
@@ -47,8 +51,9 @@ getRefreshedData.addEventListener("click", async (e) => {
       todoList.appendChild(li);
     });
 
-    console.log(result.data.length);
+    // console.log(result.data.length);
   } catch (error) {
     console.log(error.message);
   }
-});
+}
+getAllTodo();

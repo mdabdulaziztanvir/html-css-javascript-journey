@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "sf-pro-text";
+  src:
+    url("./files/fonts/SF\ Pro\ Text/SF-Pro-Text-Regular.otf"),
+    format("opentype");
+  font-display: swap;
+  font-style: normal;
+}
+footer {
+  padding: 0.8em;
+  font-family: "sf-pro-text", serif;
+}
+footer > p {
+  color: #4e4e4e;
+  margin-top: 13px;
+  font-size: 13px;
+}
+p > ol {
+  list-style-type: decimal;
+  margin: 0;
+  list-style-position: inside;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+.color-ash {
+  padding: 0 13px;
+  color: #4e4e4e;
+  font-size: 13px;
+  /* border: 1px solid red; */
+  list-style-position: outside;
+  margin-left: 17px;
+}
