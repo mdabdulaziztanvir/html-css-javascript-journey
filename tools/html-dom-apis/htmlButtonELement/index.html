@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./HTMLButtonElement.css">
+    <title>HTML Button Element</title>
+</head>
+<body>
+    <!-- simple hash routing -->
+    <!-- routing -->
+    <button onclick="navigate('Home')">Home</button>
+    <button onclick="navigate('About')">About</button>
+    <button onclick="navigate('Contact')">Contact</button>
+    
+    <!-- pages -->
+    <div class="page" id="Home">Home Page</div>
+    <div class="page" id="Contact">Contact Page</div>
+    <div class="page" id="About">About Page</div>
+    
+    <!-- html button element -->
+    <h1>html button element</h1>
+    
+    <button id="popoverButton" commandfor="popoverdiv" command="toggle-popover">
+        togle-popover
+    </button>
+    <div popover id="popoverdiv">
+        <button id="closePopover" commandfor="popoverdiv" command="hide-popover">
+            close
+        </button>
+    </div>
+    <!-- firefox a kichu version a support korena -->
+    <div class="controls">
+        <button commandfor="the-image" command="--rotate-left">
+            Rotate Left
+        </button>
+        <button commandfor="the-image" command="--reset">Reset</button>
+        <button commandfor="the-image" command="--rotate-right">
+            Rotate Right
+        </button>
+    </div>
+    
+    <img
+    id="the-image"
+    src="https://www.svgrepo.com/show/530181/dinosaur.svg"
+    alt="dinosaur head rotated 0 degrees"
+    />
+</div>
+<script src="./HTMLbuttonElement.js"></script>
+</body>
+</html>

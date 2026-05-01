@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./canvasstyles.css" />
+    <title>HTML Canvas</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="flex" style="display: flex; gap: 1rem">
+      <h1>
+        This is
+        <i
+          ><b> <u>Learning Canvas</u> </b></i
+        >page
+      </h1>
+      <a href="../">
+        <button class="normal-button">back</button>
+      </a>
+    </div>
+    <!-- body -->
+    <canvas width="650" height="500" id="learningCavas" role="presentation">
+      your browser does not support canvas element, update to modern browser.
+      Thank you.
+      <img
+        src="../project-video/files/images/cat.jpg"
+        width="650"
+        height="500"
+        alt="test"
+      />
+    </canvas>
+    <button id="downloadCanvasButton">Download</button>
+    <script src="./canvasmain.js"></script>
+  </body>
+</html>
