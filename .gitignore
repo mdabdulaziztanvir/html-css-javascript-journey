@@ -1,4 +1,4 @@
-files
+
 
 .wrangler
 
@@ -6,5 +6,5 @@ node_modules
 .env
 test/*
 
-exports/*
+
 backend/*

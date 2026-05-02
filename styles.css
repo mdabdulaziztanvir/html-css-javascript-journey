@@ -1,19 +1,70 @@
+:root {
+  /* Backgrounds */
+  --bg-primary: rgb(255, 255, 240);
+  --bg-secondary: rgb(255, 250, 205);
+
+  /* Accents */
+  --accent-soft: rgb(255, 218, 185);
+  --accent-strong: rgb(218, 165, 32);
+
+  /* Text */
+  --text-main: rgb(43, 42, 30);
+  --text-muted: rgb(100, 95, 70);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: rgb(18, 18, 14);
+    --bg-secondary: rgb(30, 30, 20);
+
+    --accent-soft: rgb(189, 183, 107);
+    --accent-strong: rgb(255, 215, 0);
+
+    --text-main: rgb(255, 250, 205);
+    --text-muted: rgb(180, 180, 150);
+  }
+
+  .normal-button::before {
+    filter: invert(1);
+  }
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color-scheme: dark light;
 }
 body {
   max-width: 1290px;
   margin: 0 auto;
+  color: var(--text-main);
+  background-color: var(--bg-secondary);
 }
 .normal-button {
-  padding-inline: 0.5rem;
+  padding-inline: 0.7rem;
+  margin-block: 0.1rem;
   padding-block: 0.3rem;
   text-decoration: none;
+  border: none;
+  outline: 1px solid rgb(120, 153, 55);
+  color: var(--text-main);
+  border-radius: 0.6rem;
   cursor: pointer;
+  background-color: var(--bg-secondary);
+}
+.normal-button:active {
+  outline: 1px solid rgb(97, 139, 20);
+}
+.normal-button::before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  background-image: url("./files/images/link.png");
 }
 a:-webkit-any-link {
-  overflow: hidden;
   text-decoration: none;
 }

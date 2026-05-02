@@ -52,5 +52,3 @@ downloadCanvasButton.addEventListener("click", () => {
     URL.revokeObjectURL(url);
   }, "image/png");
 });
-// console.log(downloadCanvas);
-console.log(plainDate.toString());

@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles.css">
     <link rel="stylesheet" href="./HTMLButtonElement.css">
     <title>HTML Button Element</title>
 </head>
 <body>
+    <div class="flex" style="display: flex; gap: 1rem">
+      <h1>
+        This is
+        <i
+          ><b> <u>HTML Button Element</u> </b></i
+        >page
+      </h1>
+      <a href="../">
+        <button class="normal-button">back</button>
+      </a>
+    </div>
     <!-- simple hash routing -->
     <!-- routing -->
-    <button onclick="navigate('Home')">Home</button>
-    <button onclick="navigate('About')">About</button>
-    <button onclick="navigate('Contact')">Contact</button>
+    <button class="normal-button" onclick="navigate('Home')">Home</button>
+    <button class="normal-button" onclick="navigate('About')">About</button>
+    <button class="normal-button" onclick="navigate('Contact')">Contact</button>
     
     <!-- pages -->
     <div class="page" id="Home">Home Page</div>
@@ -21,21 +33,21 @@
     <!-- html button element -->
     <h1>html button element</h1>
     
-    <button id="popoverButton" commandfor="popoverdiv" command="toggle-popover">
+    <button class="normal-button" id="popoverButton" commandfor="popoverdiv" command="toggle-popover">
         togle-popover
     </button>
     <div popover id="popoverdiv">
-        <button id="closePopover" commandfor="popoverdiv" command="hide-popover">
+        <button class="normal-button" id="closePopover" commandfor="popoverdiv" command="hide-popover">
             close
         </button>
     </div>
     <!-- firefox a kichu version a support korena -->
     <div class="controls">
-        <button commandfor="the-image" command="--rotate-left">
+        <button class="normal-button" commandfor="the-image" command="--rotate-left">
             Rotate Left
         </button>
-        <button commandfor="the-image" command="--reset">Reset</button>
-        <button commandfor="the-image" command="--rotate-right">
+        <button class="normal-button" commandfor="the-image" command="--reset">Reset</button>
+        <button class="normal-button" commandfor="the-image" command="--rotate-right">
             Rotate Right
         </button>
     </div>
