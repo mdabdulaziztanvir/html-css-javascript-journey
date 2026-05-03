@@ -1,13 +1,10 @@
 :root {
-  /* Backgrounds */
   --bg-primary: rgb(255, 255, 240);
   --bg-secondary: rgb(255, 250, 205);
 
-  /* Accents */
   --accent-soft: rgb(255, 218, 185);
   --accent-strong: rgb(218, 165, 32);
 
-  /* Text */
   --text-main: rgb(43, 42, 30);
   --text-muted: rgb(100, 95, 70);
 }
